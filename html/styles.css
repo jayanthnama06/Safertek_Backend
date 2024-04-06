@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background image */
+  .background-image {
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1700524800&semt=sph'); /* Replace 'your-background-image-url.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(134, 24, 207);
+    text-align: center;
+  }
+  
+  /* Style the content inside the background image */
+  .content {
+    padding: 20px;
+  }
+  
+  /* Style sections */
+  .section {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+ 
+ /* Reset default margin and padding */
+* {
+   
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  
+    #menu-toggle:checked + .menu {
+      display: flex;
+    }
+  }
+  
